@@ -1,37 +1,38 @@
-from fastapi import APIRouter, Depends, FastAPI
+import os
+from typing import Annotated
+
+from fastapi import Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from sqlalchemy import text
+from sqlalchemy import select
+from sqlalchemy.orm import Session
 
-from app.auth import get_current_user
-from app.config import settings
-from app.db import SessionDep
-from app.routers import me, meetings, participants
+from app.db import get_db
+from app.models import Meeting
+from app.schemas import MeetingCreate, MeetingOut
 
-app = FastAPI(
-    title="Meetings API",
-    docs_url="/api/docs",
-    redoc_url=None,
-    openapi_url="/api/openapi.json",
-)
+DB = Annotated[Session, Depends(get_db)]
 
+app = FastAPI(title="Spry")
+
+origins = [o.strip() for o in os.getenv("CORS_ORIGINS", "http://localhost:5173").split(",")]
 app.add_middleware(
-    CORSMiddleware,
-    allow_origins=settings.cors_origins,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    CORSMiddleware, allow_origins=origins, allow_methods=["GET", "POST"], allow_headers=["*"]
 )
 
-api = APIRouter(prefix="/api")
 
-
-@api.get("/health", tags=["health"])
-async def health(session: SessionDep) -> dict[str, str]:
-    await session.execute(text("SELECT 1"))
+@app.get("/health")
+def health():
     return {"status": "ok"}
 
 
-# Everything but /api/health needs a signed-in user; meetings are scoped to their owner.
-api.include_router(me.router)
-api.include_router(meetings.router)
-api.include_router(participants.router, dependencies=[Depends(get_current_user)])
-app.include_router(api)
+@app.get("/api/meetings", response_model=list[MeetingOut])
+def list_meetings(db: DB):
+    return db.scalars(select(Meeting).order_by(Meeting.starts_at)).all()
+
+
+@app.post("/api/meetings", response_model=MeetingOut, status_code=201)
+def create_meeting(data: MeetingCreate, db: DB):
+    meeting = Meeting(**data.model_dump())
+    db.add(meeting)
+    db.commit()
+    return meeting

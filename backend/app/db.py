@@ -1,24 +1,18 @@
-from collections.abc import AsyncIterator
-from typing import Annotated
+import os
 
-from fastapi import Depends
-from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
+from sqlalchemy import create_engine
+from sqlalchemy.orm import DeclarativeBase, sessionmaker
 
-from app.config import settings
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql+psycopg://spry:spry@localhost:5432/spry")
 
-engine = create_async_engine(
-    settings.database_url,
-    pool_size=settings.db_pool_size,
-    max_overflow=settings.db_max_overflow,
-    # Connections can go stale while a Lambda instance is frozen between requests.
-    pool_pre_ping=True,
-)
-SessionLocal = async_sessionmaker(engine, expire_on_commit=False)
+engine = create_engine(DATABASE_URL, pool_pre_ping=True)
+SessionLocal = sessionmaker(engine, expire_on_commit=False)
 
 
-async def get_session() -> AsyncIterator[AsyncSession]:
-    async with SessionLocal() as session:
-        yield session
+class Base(DeclarativeBase):
+    pass
 
 
-SessionDep = Annotated[AsyncSession, Depends(get_session)]
+def get_db():
+    with SessionLocal() as db:
+        yield db
