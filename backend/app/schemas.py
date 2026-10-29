@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import date, datetime
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
@@ -24,3 +24,25 @@ class MeetingOut(BaseModel):
     starts_at: datetime
     ends_at: datetime
     attendee_count: int
+
+
+class AgendaItemIn(BaseModel):
+    topic: str = Field(min_length=1, max_length=300)
+    owner: str | None = Field(default=None, max_length=200)
+    minutes: int | None = Field(default=None, ge=1, le=480)
+
+
+class ActionItemIn(BaseModel):
+    task: str = Field(min_length=1, max_length=300)
+    owner: str | None = Field(default=None, max_length=200)
+    due: date | None = None
+
+
+class AgendaIn(BaseModel):
+    items: list[AgendaItemIn] = Field(max_length=50)
+    action_items: list[ActionItemIn] = Field(default=[], max_length=50)
+    ai_suggestion: dict | None = None
+
+
+class AgendaOut(AgendaIn):
+    model_config = ConfigDict(from_attributes=True)
