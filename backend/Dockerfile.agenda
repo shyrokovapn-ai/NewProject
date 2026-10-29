@@ -1,0 +1,7 @@
+# Lambda image for the agenda parser (Lab 6). No database, so only the app.ai package.
+FROM public.ecr.aws/lambda/python:3.12
+COPY requirements-lambda.txt .
+RUN pip install --no-cache-dir -r requirements-lambda.txt
+COPY app/__init__.py ${LAMBDA_TASK_ROOT}/app/__init__.py
+COPY app/ai ${LAMBDA_TASK_ROOT}/app/ai
+CMD ["app.ai.agenda_lambda.handler"]
