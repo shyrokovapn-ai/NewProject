@@ -1,0 +1,60 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: One-time Glue Crawler role and crawler for the payments lab source prefix.
+
+Parameters:
+  BucketName:
+    Type: String
+  DatabaseName:
+    Type: String
+    Default: payments_lab
+  CrawlerName:
+    Type: String
+    Default: payments-lab-crawler
+
+Resources:
+  CrawlerRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub '${CrawlerName}-role'
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal: { Service: glue.amazonaws.com }
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSGlueServiceRole
+      Policies:
+        - PolicyName: ReadPaymentsPrefix
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action: [s3:ListBucket]
+                Resource: !Sub 'arn:${AWS::Partition}:s3:::${BucketName}'
+              - Effect: Allow
+                Action: [s3:GetObject]
+                Resource: !Sub 'arn:${AWS::Partition}:s3:::${BucketName}/payments/*'
+
+  PaymentsCrawler:
+    Type: AWS::Glue::Crawler
+    DependsOn: CrawlerRole
+    Properties:
+      Name: !Ref CrawlerName
+      Role: !GetAtt CrawlerRole.Arn
+      DatabaseName: !Ref DatabaseName
+      TablePrefix: crawler_
+      Targets:
+        S3Targets:
+          - Path: !Sub 's3://${BucketName}/payments/'
+      SchemaChangePolicy:
+        UpdateBehavior: UPDATE_IN_DATABASE
+        DeleteBehavior: LOG
+      RecrawlPolicy:
+        RecrawlBehavior: CRAWL_EVERYTHING
+
+Outputs:
+  CrawlerName:
+    Value: !Ref PaymentsCrawler
+  CrawlerRoleArn:
+    Value: !GetAtt CrawlerRole.Arn

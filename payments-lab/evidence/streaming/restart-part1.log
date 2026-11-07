@@ -1,0 +1,1208 @@
+Consuming payments as group payments-final-restart; Ctrl-C to stop
+WINDOW start=2026-10-01T00:00:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:00:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:01:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:01:00+00:00 method=card events=1 failures=1 failure_share=100.00%
+ALERT method=card window=2026-10-01T00:01:00+00:00 failure_share=100.00% threshold=10%
+WINDOW start=2026-10-01T00:02:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:02:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:03:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:03:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:04:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:04:00+00:00 method=card events=3 failures=1 failure_share=33.33%
+ALERT method=card window=2026-10-01T00:04:00+00:00 failure_share=33.33% threshold=10%
+WINDOW start=2026-10-01T00:04:00+00:00 method=google_pay events=2 failures=1 failure_share=50.00%
+ALERT method=google_pay window=2026-10-01T00:04:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T00:05:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:05:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:06:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:06:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:07:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:07:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:07:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:08:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:08:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:08:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:09:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:10:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:10:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:10:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:11:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:12:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:13:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:13:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:13:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:14:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:14:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:15:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:15:00+00:00 method=card events=6 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_52a8597ac7 modifiedDate=2026-10-01T00:09:49Z total=1
+WINDOW start=2026-10-01T00:16:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:16:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:16:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:16:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:17:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:18:00+00:00 method=card events=2 failures=1 failure_share=50.00%
+ALERT method=card window=2026-10-01T00:18:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T00:20:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:20:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:21:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:21:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:21:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:22:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:23:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:23:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:24:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:24:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:25:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:26:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:27:00+00:00 method=google_pay events=1 failures=1 failure_share=100.00%
+ALERT method=google_pay window=2026-10-01T00:27:00+00:00 failure_share=100.00% threshold=10%
+WINDOW start=2026-10-01T00:28:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:28:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:28:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:29:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:29:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:30:00+00:00 method=card events=5 failures=1 failure_share=20.00%
+ALERT method=card window=2026-10-01T00:30:00+00:00 failure_share=20.00% threshold=10%
+WINDOW start=2026-10-01T00:30:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:31:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:32:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:32:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:32:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:32:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:33:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:34:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:34:00+00:00 method=card events=2 failures=1 failure_share=50.00%
+ALERT method=card window=2026-10-01T00:34:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T00:35:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:35:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_5fa095e096 modifiedDate=2026-10-01T00:30:27Z total=2
+WINDOW start=2026-10-01T00:36:00+00:00 method=card events=3 failures=1 failure_share=33.33%
+ALERT method=card window=2026-10-01T00:36:00+00:00 failure_share=33.33% threshold=10%
+WINDOW start=2026-10-01T00:37:00+00:00 method=apple_pay events=1 failures=1 failure_share=100.00%
+ALERT method=apple_pay window=2026-10-01T00:37:00+00:00 failure_share=100.00% threshold=10%
+WINDOW start=2026-10-01T00:37:00+00:00 method=card events=2 failures=1 failure_share=50.00%
+ALERT method=card window=2026-10-01T00:37:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T00:38:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:39:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:39:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:39:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:40:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:41:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:42:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:43:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:44:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:44:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_774fefbc7a modifiedDate=2026-10-01T00:40:48Z total=3
+WINDOW start=2026-10-01T00:45:00+00:00 method=card events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:45:00+00:00 method=google_pay events=1 failures=1 failure_share=100.00%
+ALERT method=google_pay window=2026-10-01T00:45:00+00:00 failure_share=100.00% threshold=10%
+WINDOW start=2026-10-01T00:46:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:47:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:47:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:47:00+00:00 method=google_pay events=1 failures=1 failure_share=100.00%
+ALERT method=google_pay window=2026-10-01T00:47:00+00:00 failure_share=100.00% threshold=10%
+LATE_REJECTED invoice=p2_e99778df94 modifiedDate=2026-10-01T00:45:19Z total=4
+LATE_REJECTED invoice=p2_cf4761436d modifiedDate=2026-10-01T00:45:14Z total=5
+WINDOW start=2026-10-01T00:48:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:48:00+00:00 method=card events=4 failures=1 failure_share=25.00%
+ALERT method=card window=2026-10-01T00:48:00+00:00 failure_share=25.00% threshold=10%
+WINDOW start=2026-10-01T00:48:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_810c5ba6c3 modifiedDate=2026-10-01T00:46:21Z total=6
+WINDOW start=2026-10-01T00:50:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:50:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:51:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_b10ced6b4e modifiedDate=2026-10-01T00:45:40Z total=7
+LATE_REJECTED invoice=p2_64b4de5252 modifiedDate=2026-10-01T00:50:44Z total=8
+WINDOW start=2026-10-01T00:52:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:52:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:52:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:53:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:53:00+00:00 method=card events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:54:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:54:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:54:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:54:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:55:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:55:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:56:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:56:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:57:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:57:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_614df8abe3 modifiedDate=2026-10-01T00:50:27Z total=9
+LATE_REJECTED invoice=p2_b0b75d5fcf modifiedDate=2026-10-01T00:53:45Z total=10
+LATE_REJECTED invoice=p2_2ce30bc4c1 modifiedDate=2026-10-01T00:53:32Z total=11
+WINDOW start=2026-10-01T00:58:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:58:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:58:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:59:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T00:59:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:00:00+00:00 method=apple_pay events=1 failures=1 failure_share=100.00%
+ALERT method=apple_pay window=2026-10-01T01:00:00+00:00 failure_share=100.00% threshold=10%
+WINDOW start=2026-10-01T01:00:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:00:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:01:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:02:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:03:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:03:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:04:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:04:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:05:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:05:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_8cfe52fc4c modifiedDate=2026-10-01T01:00:01Z total=12
+LATE_REJECTED invoice=p2_69bb401ce0 modifiedDate=2026-10-01T01:03:41Z total=13
+WINDOW start=2026-10-01T01:06:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:07:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:07:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:08:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:08:00+00:00 method=card events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:08:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:09:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:09:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:10:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:10:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:11:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:11:00+00:00 method=card events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:11:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:12:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:12:00+00:00 method=card events=3 failures=1 failure_share=33.33%
+ALERT method=card window=2026-10-01T01:12:00+00:00 failure_share=33.33% threshold=10%
+WINDOW start=2026-10-01T01:13:00+00:00 method=apple_pay events=3 failures=1 failure_share=33.33%
+ALERT method=apple_pay window=2026-10-01T01:13:00+00:00 failure_share=33.33% threshold=10%
+WINDOW start=2026-10-01T01:13:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:13:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:14:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_5e037df037 modifiedDate=2026-10-01T01:11:09Z total=14
+WINDOW start=2026-10-01T01:15:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:15:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_ce75d7f23d modifiedDate=2026-10-01T01:11:16Z total=15
+LATE_REJECTED invoice=p2_a518c9d61d modifiedDate=2026-10-01T01:11:16Z total=16
+WINDOW start=2026-10-01T01:16:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:16:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:16:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:17:00+00:00 method=apple_pay events=2 failures=1 failure_share=50.00%
+ALERT method=apple_pay window=2026-10-01T01:17:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T01:17:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:18:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_a7cfb349c9 modifiedDate=2026-10-01T01:13:34Z total=17
+WINDOW start=2026-10-01T01:19:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:20:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:20:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:21:00+00:00 method=apple_pay events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:21:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:21:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:22:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:22:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_8011dd68b6 modifiedDate=2026-10-01T01:22:03Z total=18
+WINDOW start=2026-10-01T01:23:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:23:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:23:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:24:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:24:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:25:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:25:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:25:00+00:00 method=qr events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:26:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:26:00+00:00 method=card events=2 failures=1 failure_share=50.00%
+ALERT method=card window=2026-10-01T01:26:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T01:27:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:27:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:28:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:28:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:29:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:29:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:29:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:30:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:30:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:31:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:31:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:32:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_00b4c509e0 modifiedDate=2026-10-01T01:31:09Z total=19
+WINDOW start=2026-10-01T01:33:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:33:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:34:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:34:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:34:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:35:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:35:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_1f5728298d modifiedDate=2026-10-01T01:31:46Z total=20
+WINDOW start=2026-10-01T01:36:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:37:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:37:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_d016b28fdd modifiedDate=2026-10-01T01:32:17Z total=21
+WINDOW start=2026-10-01T01:38:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:38:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:38:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_34742e2009 modifiedDate=2026-10-01T01:38:51Z total=22
+LATE_REJECTED invoice=p2_0c2b91c47b modifiedDate=2026-10-01T01:35:46Z total=23
+WINDOW start=2026-10-01T01:39:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:39:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:39:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:39:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:40:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:40:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:41:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:41:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:42:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:43:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:44:00+00:00 method=card events=3 failures=1 failure_share=33.33%
+ALERT method=card window=2026-10-01T01:44:00+00:00 failure_share=33.33% threshold=10%
+WINDOW start=2026-10-01T01:45:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:45:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:46:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:46:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:47:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:47:00+00:00 method=card events=3 failures=1 failure_share=33.33%
+ALERT method=card window=2026-10-01T01:47:00+00:00 failure_share=33.33% threshold=10%
+WINDOW start=2026-10-01T01:47:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:48:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:48:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:48:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:49:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:49:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:50:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:50:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:50:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_d338d47d2a modifiedDate=2026-10-01T01:47:02Z total=24
+WINDOW start=2026-10-01T01:51:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:51:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:51:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:52:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_898f04f706 modifiedDate=2026-10-01T01:50:10Z total=25
+WINDOW start=2026-10-01T01:53:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:53:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:53:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:54:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:54:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:55:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:55:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:56:00+00:00 method=card events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:57:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:57:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:58:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:59:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T01:59:00+00:00 method=card events=6 failures=2 failure_share=33.33%
+ALERT method=card window=2026-10-01T01:59:00+00:00 failure_share=33.33% threshold=10%
+LATE_REJECTED invoice=p2_a7f8a280d9 modifiedDate=2026-10-01T01:57:19Z total=26
+WINDOW start=2026-10-01T02:00:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:01:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:01:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:02:00+00:00 method=card events=3 failures=1 failure_share=33.33%
+ALERT method=card window=2026-10-01T02:02:00+00:00 failure_share=33.33% threshold=10%
+WINDOW start=2026-10-01T02:02:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:03:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:04:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:05:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:06:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:07:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:08:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:10:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:11:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:11:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:12:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:12:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:12:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:13:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:14:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:14:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:15:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:15:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:16:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:16:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:17:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:17:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:17:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:18:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:18:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:18:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:19:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:19:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:20:00+00:00 method=card events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:21:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:21:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:21:00+00:00 method=google_pay events=2 failures=1 failure_share=50.00%
+ALERT method=google_pay window=2026-10-01T02:21:00+00:00 failure_share=50.00% threshold=10%
+LATE_REJECTED invoice=p2_0a390d1f40 modifiedDate=2026-10-01T02:15:41Z total=27
+WINDOW start=2026-10-01T02:22:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:22:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:23:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:24:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:24:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:25:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:26:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:26:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:26:00+00:00 method=qr events=1 failures=1 failure_share=100.00%
+ALERT method=qr window=2026-10-01T02:26:00+00:00 failure_share=100.00% threshold=10%
+WINDOW start=2026-10-01T02:27:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:27:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_2b32eb5260 modifiedDate=2026-10-01T02:21:42Z total=28
+WINDOW start=2026-10-01T02:29:00+00:00 method=google_pay events=2 failures=1 failure_share=50.00%
+ALERT method=google_pay window=2026-10-01T02:29:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T02:30:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:30:00+00:00 method=card events=2 failures=1 failure_share=50.00%
+ALERT method=card window=2026-10-01T02:30:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T02:31:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_8d5f30c2db modifiedDate=2026-10-01T02:30:16Z total=29
+WINDOW start=2026-10-01T02:32:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:32:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:33:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:33:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:33:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:34:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:34:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:35:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:35:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:35:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:36:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:36:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:37:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:37:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:37:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:38:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:38:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:39:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:39:00+00:00 method=card events=6 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_4e9f0ecaba modifiedDate=2026-10-01T02:34:40Z total=30
+WINDOW start=2026-10-01T02:40:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:40:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:40:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:41:00+00:00 method=apple_pay events=1 failures=1 failure_share=100.00%
+ALERT method=apple_pay window=2026-10-01T02:41:00+00:00 failure_share=100.00% threshold=10%
+WINDOW start=2026-10-01T02:41:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_2dc9dff752 modifiedDate=2026-10-01T02:40:40Z total=31
+WINDOW start=2026-10-01T02:42:00+00:00 method=apple_pay events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:42:00+00:00 method=card events=3 failures=1 failure_share=33.33%
+ALERT method=card window=2026-10-01T02:42:00+00:00 failure_share=33.33% threshold=10%
+WINDOW start=2026-10-01T02:43:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:43:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:43:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:44:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:44:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:45:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:45:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:46:00+00:00 method=apple_pay events=1 failures=1 failure_share=100.00%
+ALERT method=apple_pay window=2026-10-01T02:46:00+00:00 failure_share=100.00% threshold=10%
+WINDOW start=2026-10-01T02:46:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:47:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:47:00+00:00 method=card events=5 failures=2 failure_share=40.00%
+ALERT method=card window=2026-10-01T02:47:00+00:00 failure_share=40.00% threshold=10%
+WINDOW start=2026-10-01T02:48:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:48:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:49:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:49:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:50:00+00:00 method=apple_pay events=3 failures=1 failure_share=33.33%
+ALERT method=apple_pay window=2026-10-01T02:50:00+00:00 failure_share=33.33% threshold=10%
+WINDOW start=2026-10-01T02:50:00+00:00 method=card events=2 failures=1 failure_share=50.00%
+ALERT method=card window=2026-10-01T02:50:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T02:51:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:51:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:52:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:52:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_0604459037 modifiedDate=2026-10-01T02:51:03Z total=32
+WINDOW start=2026-10-01T02:53:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:53:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:54:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:54:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:55:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_e5dad05bf6 modifiedDate=2026-10-01T02:55:22Z total=33
+WINDOW start=2026-10-01T02:56:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:56:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_63ea18588b modifiedDate=2026-10-01T02:50:21Z total=34
+WINDOW start=2026-10-01T02:57:00+00:00 method=card events=1 failures=1 failure_share=100.00%
+ALERT method=card window=2026-10-01T02:57:00+00:00 failure_share=100.00% threshold=10%
+WINDOW start=2026-10-01T02:58:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:58:00+00:00 method=card events=2 failures=1 failure_share=50.00%
+ALERT method=card window=2026-10-01T02:58:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T02:58:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:59:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T02:59:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:00:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:00:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:01:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:01:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_b2c0232a0f modifiedDate=2026-10-01T02:58:24Z total=35
+LATE_REJECTED invoice=p2_633b0d136d modifiedDate=2026-10-01T02:58:07Z total=36
+WINDOW start=2026-10-01T03:02:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:02:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:02:00+00:00 method=google_pay events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:03:00+00:00 method=apple_pay events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:03:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:03:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:04:00+00:00 method=apple_pay events=2 failures=1 failure_share=50.00%
+ALERT method=apple_pay window=2026-10-01T03:04:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T03:04:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:04:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:05:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:07:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:07:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_07c4a6aaa4 modifiedDate=2026-10-01T03:01:27Z total=37
+WINDOW start=2026-10-01T03:08:00+00:00 method=apple_pay events=2 failures=1 failure_share=50.00%
+ALERT method=apple_pay window=2026-10-01T03:08:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T03:08:00+00:00 method=card events=4 failures=1 failure_share=25.00%
+ALERT method=card window=2026-10-01T03:08:00+00:00 failure_share=25.00% threshold=10%
+WINDOW start=2026-10-01T03:08:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:09:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:09:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:10:00+00:00 method=apple_pay events=1 failures=1 failure_share=100.00%
+ALERT method=apple_pay window=2026-10-01T03:10:00+00:00 failure_share=100.00% threshold=10%
+WINDOW start=2026-10-01T03:10:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:10:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:11:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:11:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:11:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:12:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:13:00+00:00 method=card events=3 failures=1 failure_share=33.33%
+ALERT method=card window=2026-10-01T03:13:00+00:00 failure_share=33.33% threshold=10%
+WINDOW start=2026-10-01T03:13:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:14:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:14:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:14:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_ef4ab5605e modifiedDate=2026-10-01T03:08:35Z total=38
+WINDOW start=2026-10-01T03:15:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:15:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:16:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:16:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_f15b499afd modifiedDate=2026-10-01T03:11:09Z total=39
+WINDOW start=2026-10-01T03:17:00+00:00 method=apple_pay events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:17:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:17:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_91db6c6500 modifiedDate=2026-10-01T03:13:28Z total=40
+WINDOW start=2026-10-01T03:18:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:19:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:19:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:19:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:20:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:20:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:20:00+00:00 method=google_pay events=2 failures=1 failure_share=50.00%
+ALERT method=google_pay window=2026-10-01T03:20:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T03:21:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:21:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_3185cb53bf modifiedDate=2026-10-01T03:17:53Z total=41
+WINDOW start=2026-10-01T03:22:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:22:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:22:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:23:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:23:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:24:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_4ed4d0b371 modifiedDate=2026-10-01T03:19:52Z total=42
+WINDOW start=2026-10-01T03:26:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:27:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:27:00+00:00 method=card events=4 failures=1 failure_share=25.00%
+ALERT method=card window=2026-10-01T03:27:00+00:00 failure_share=25.00% threshold=10%
+WINDOW start=2026-10-01T03:27:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:28:00+00:00 method=apple_pay events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:28:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_782afb1a17 modifiedDate=2026-10-01T03:24:10Z total=43
+WINDOW start=2026-10-01T03:29:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_26cfc784a2 modifiedDate=2026-10-01T03:29:56Z total=44
+WINDOW start=2026-10-01T03:30:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:31:00+00:00 method=apple_pay events=2 failures=1 failure_share=50.00%
+ALERT method=apple_pay window=2026-10-01T03:31:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T03:31:00+00:00 method=card events=4 failures=1 failure_share=25.00%
+ALERT method=card window=2026-10-01T03:31:00+00:00 failure_share=25.00% threshold=10%
+WINDOW start=2026-10-01T03:32:00+00:00 method=card events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:33:00+00:00 method=card events=2 failures=1 failure_share=50.00%
+ALERT method=card window=2026-10-01T03:33:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T03:34:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:34:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:35:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:36:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:36:00+00:00 method=card events=4 failures=1 failure_share=25.00%
+ALERT method=card window=2026-10-01T03:36:00+00:00 failure_share=25.00% threshold=10%
+WINDOW start=2026-10-01T03:36:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:37:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:37:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:38:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:38:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:39:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:39:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:40:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_c0cab113e0 modifiedDate=2026-10-01T03:36:16Z total=45
+WINDOW start=2026-10-01T03:41:00+00:00 method=card events=2 failures=1 failure_share=50.00%
+ALERT method=card window=2026-10-01T03:41:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T03:41:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:42:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:43:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:43:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:44:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:44:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:44:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_8af72ebe78 modifiedDate=2026-10-01T03:43:53Z total=46
+WINDOW start=2026-10-01T03:45:00+00:00 method=apple_pay events=2 failures=1 failure_share=50.00%
+ALERT method=apple_pay window=2026-10-01T03:45:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T03:45:00+00:00 method=card events=3 failures=1 failure_share=33.33%
+ALERT method=card window=2026-10-01T03:45:00+00:00 failure_share=33.33% threshold=10%
+WINDOW start=2026-10-01T03:45:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:46:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_cdd1fdce37 modifiedDate=2026-10-01T03:45:10Z total=47
+WINDOW start=2026-10-01T03:47:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:47:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:48:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:48:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:49:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:49:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:50:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:51:00+00:00 method=card events=2 failures=1 failure_share=50.00%
+ALERT method=card window=2026-10-01T03:51:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T03:53:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:53:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:54:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:54:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:55:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_7b3a8f95f5 modifiedDate=2026-10-01T03:49:01Z total=48
+LATE_REJECTED invoice=p2_2a0d54e8e0 modifiedDate=2026-10-01T03:49:10Z total=49
+WINDOW start=2026-10-01T03:56:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:57:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:57:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:58:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:58:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:58:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:59:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T03:59:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:00:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:00:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:01:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:01:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:01:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:02:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:02:00+00:00 method=card events=4 failures=1 failure_share=25.00%
+ALERT method=card window=2026-10-01T04:02:00+00:00 failure_share=25.00% threshold=10%
+WINDOW start=2026-10-01T04:02:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_27172f7bfd modifiedDate=2026-10-01T03:58:30Z total=50
+WINDOW start=2026-10-01T04:03:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:03:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:03:00+00:00 method=google_pay events=2 failures=1 failure_share=50.00%
+ALERT method=google_pay window=2026-10-01T04:03:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T04:04:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:04:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:04:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_a328f4e6d5 modifiedDate=2026-10-01T04:00:36Z total=51
+WINDOW start=2026-10-01T04:05:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:05:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:06:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:06:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:06:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:07:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:07:00+00:00 method=card events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:07:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:07:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:08:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:09:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:09:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:10:00+00:00 method=card events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:10:00+00:00 method=google_pay events=2 failures=1 failure_share=50.00%
+ALERT method=google_pay window=2026-10-01T04:10:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T04:11:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:12:00+00:00 method=apple_pay events=3 failures=1 failure_share=33.33%
+ALERT method=apple_pay window=2026-10-01T04:12:00+00:00 failure_share=33.33% threshold=10%
+WINDOW start=2026-10-01T04:12:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:12:00+00:00 method=google_pay events=1 failures=1 failure_share=100.00%
+ALERT method=google_pay window=2026-10-01T04:12:00+00:00 failure_share=100.00% threshold=10%
+WINDOW start=2026-10-01T04:13:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:14:00+00:00 method=card events=5 failures=1 failure_share=20.00%
+ALERT method=card window=2026-10-01T04:14:00+00:00 failure_share=20.00% threshold=10%
+WINDOW start=2026-10-01T04:15:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:15:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:15:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:16:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_c18cc04d69 modifiedDate=2026-10-01T04:12:05Z total=52
+WINDOW start=2026-10-01T04:17:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:17:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:17:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:18:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:18:00+00:00 method=card events=2 failures=1 failure_share=50.00%
+ALERT method=card window=2026-10-01T04:18:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T04:18:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:19:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:19:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:20:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:21:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:21:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:22:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:22:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:23:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:23:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:23:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:24:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:24:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:24:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:25:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:26:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:26:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:26:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:27:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:27:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:28:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:28:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:29:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:29:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:30:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:30:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:31:00+00:00 method=apple_pay events=2 failures=1 failure_share=50.00%
+ALERT method=apple_pay window=2026-10-01T04:31:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T04:31:00+00:00 method=card events=6 failures=1 failure_share=16.67%
+ALERT method=card window=2026-10-01T04:31:00+00:00 failure_share=16.67% threshold=10%
+WINDOW start=2026-10-01T04:32:00+00:00 method=google_pay events=3 failures=1 failure_share=33.33%
+ALERT method=google_pay window=2026-10-01T04:32:00+00:00 failure_share=33.33% threshold=10%
+WINDOW start=2026-10-01T04:33:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:34:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_190ed02e8b modifiedDate=2026-10-01T04:32:23Z total=53
+WINDOW start=2026-10-01T04:35:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:35:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:36:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:36:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_56d2ccf6ce modifiedDate=2026-10-01T04:32:05Z total=54
+WINDOW start=2026-10-01T04:37:00+00:00 method=apple_pay events=1 failures=1 failure_share=100.00%
+ALERT method=apple_pay window=2026-10-01T04:37:00+00:00 failure_share=100.00% threshold=10%
+WINDOW start=2026-10-01T04:37:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:38:00+00:00 method=apple_pay events=1 failures=1 failure_share=100.00%
+ALERT method=apple_pay window=2026-10-01T04:38:00+00:00 failure_share=100.00% threshold=10%
+WINDOW start=2026-10-01T04:38:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:39:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:39:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:40:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:40:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:40:00+00:00 method=google_pay events=1 failures=1 failure_share=100.00%
+ALERT method=google_pay window=2026-10-01T04:40:00+00:00 failure_share=100.00% threshold=10%
+WINDOW start=2026-10-01T04:41:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:41:00+00:00 method=card events=2 failures=1 failure_share=50.00%
+ALERT method=card window=2026-10-01T04:41:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T04:41:00+00:00 method=google_pay events=3 failures=1 failure_share=33.33%
+ALERT method=google_pay window=2026-10-01T04:41:00+00:00 failure_share=33.33% threshold=10%
+WINDOW start=2026-10-01T04:42:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:42:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:43:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_ff6841b8d8 modifiedDate=2026-10-01T04:38:33Z total=55
+WINDOW start=2026-10-01T04:44:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:44:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:45:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:45:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:46:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:46:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:46:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:47:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:47:00+00:00 method=card events=2 failures=1 failure_share=50.00%
+ALERT method=card window=2026-10-01T04:47:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T04:47:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:48:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:49:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:49:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:50:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:50:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:51:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:51:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:52:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:53:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:53:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:53:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:54:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:54:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:55:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:55:00+00:00 method=card events=1 failures=1 failure_share=100.00%
+ALERT method=card window=2026-10-01T04:55:00+00:00 failure_share=100.00% threshold=10%
+WINDOW start=2026-10-01T04:55:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:56:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:57:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:57:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:58:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:58:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:59:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T04:59:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:00:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:00:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:00:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:01:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:01:00+00:00 method=card events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:01:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:02:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:02:00+00:00 method=card events=6 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:03:00+00:00 method=apple_pay events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:03:00+00:00 method=card events=6 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:03:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:03:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_80eff5c327 modifiedDate=2026-10-01T05:01:53Z total=56
+WINDOW start=2026-10-01T05:04:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:04:00+00:00 method=card events=5 failures=1 failure_share=20.00%
+ALERT method=card window=2026-10-01T05:04:00+00:00 failure_share=20.00% threshold=10%
+WINDOW start=2026-10-01T05:04:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:05:00+00:00 method=apple_pay events=3 failures=1 failure_share=33.33%
+ALERT method=apple_pay window=2026-10-01T05:05:00+00:00 failure_share=33.33% threshold=10%
+WINDOW start=2026-10-01T05:05:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:05:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:05:00+00:00 method=qr events=1 failures=1 failure_share=100.00%
+ALERT method=qr window=2026-10-01T05:05:00+00:00 failure_share=100.00% threshold=10%
+LATE_REJECTED invoice=p2_cb8d3b0edc modifiedDate=2026-10-01T05:05:12Z total=57
+WINDOW start=2026-10-01T05:06:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:06:00+00:00 method=card events=5 failures=1 failure_share=20.00%
+ALERT method=card window=2026-10-01T05:06:00+00:00 failure_share=20.00% threshold=10%
+WINDOW start=2026-10-01T05:06:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_a805569548 modifiedDate=2026-10-01T05:05:00Z total=58
+WINDOW start=2026-10-01T05:07:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:07:00+00:00 method=card events=6 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:08:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:08:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:08:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:09:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:09:00+00:00 method=card events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:09:00+00:00 method=google_pay events=1 failures=1 failure_share=100.00%
+ALERT method=google_pay window=2026-10-01T05:09:00+00:00 failure_share=100.00% threshold=10%
+WINDOW start=2026-10-01T05:09:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:10:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:10:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:10:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:10:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:11:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:11:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:11:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_54d1e7d7d7 modifiedDate=2026-10-01T05:07:16Z total=59
+WINDOW start=2026-10-01T05:12:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:12:00+00:00 method=card events=6 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:12:00+00:00 method=google_pay events=2 failures=1 failure_share=50.00%
+ALERT method=google_pay window=2026-10-01T05:12:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T05:13:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:13:00+00:00 method=card events=5 failures=1 failure_share=20.00%
+ALERT method=card window=2026-10-01T05:13:00+00:00 failure_share=20.00% threshold=10%
+WINDOW start=2026-10-01T05:13:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_fefd3888d9 modifiedDate=2026-10-01T05:08:56Z total=60
+LATE_REJECTED invoice=p2_11961e558f modifiedDate=2026-10-01T05:08:09Z total=61
+WINDOW start=2026-10-01T05:14:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:14:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:15:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:16:00+00:00 method=apple_pay events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:16:00+00:00 method=card events=2 failures=1 failure_share=50.00%
+ALERT method=card window=2026-10-01T05:16:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T05:16:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:17:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:17:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:17:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_8f4d2a9349 modifiedDate=2026-10-01T05:14:26Z total=62
+WINDOW start=2026-10-01T05:18:00+00:00 method=apple_pay events=2 failures=1 failure_share=50.00%
+ALERT method=apple_pay window=2026-10-01T05:18:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T05:18:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:19:00+00:00 method=card events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:20:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:20:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:20:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:20:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:21:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:21:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_7096c09cd1 modifiedDate=2026-10-01T05:20:54Z total=63
+WINDOW start=2026-10-01T05:22:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:22:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:22:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_e9b59e52b2 modifiedDate=2026-10-01T05:18:17Z total=64
+WINDOW start=2026-10-01T05:23:00+00:00 method=apple_pay events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:23:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:23:00+00:00 method=google_pay events=3 failures=1 failure_share=33.33%
+ALERT method=google_pay window=2026-10-01T05:23:00+00:00 failure_share=33.33% threshold=10%
+WINDOW start=2026-10-01T05:24:00+00:00 method=apple_pay events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:24:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:24:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:25:00+00:00 method=apple_pay events=5 failures=1 failure_share=20.00%
+ALERT method=apple_pay window=2026-10-01T05:25:00+00:00 failure_share=20.00% threshold=10%
+WINDOW start=2026-10-01T05:25:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:25:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:26:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:26:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:27:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:27:00+00:00 method=card events=6 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_e15f1c212a modifiedDate=2026-10-01T05:24:55Z total=65
+WINDOW start=2026-10-01T05:28:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:28:00+00:00 method=card events=5 failures=1 failure_share=20.00%
+ALERT method=card window=2026-10-01T05:28:00+00:00 failure_share=20.00% threshold=10%
+WINDOW start=2026-10-01T05:28:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:28:00+00:00 method=qr events=2 failures=1 failure_share=50.00%
+ALERT method=qr window=2026-10-01T05:28:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T05:29:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:29:00+00:00 method=card events=6 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:29:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:29:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:30:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:30:00+00:00 method=card events=8 failures=1 failure_share=12.50%
+ALERT method=card window=2026-10-01T05:30:00+00:00 failure_share=12.50% threshold=10%
+WINDOW start=2026-10-01T05:30:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_c8738055b5 modifiedDate=2026-10-01T05:26:38Z total=66
+WINDOW start=2026-10-01T05:31:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:31:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:31:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_8f8373fe32 modifiedDate=2026-10-01T05:27:50Z total=67
+WINDOW start=2026-10-01T05:32:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:32:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:32:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_39e6363221 modifiedDate=2026-10-01T05:25:39Z total=68
+WINDOW start=2026-10-01T05:33:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:33:00+00:00 method=card events=3 failures=2 failure_share=66.67%
+ALERT method=card window=2026-10-01T05:33:00+00:00 failure_share=66.67% threshold=10%
+WINDOW start=2026-10-01T05:33:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:33:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:34:00+00:00 method=card events=5 failures=3 failure_share=60.00%
+ALERT method=card window=2026-10-01T05:34:00+00:00 failure_share=60.00% threshold=10%
+WINDOW start=2026-10-01T05:34:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_b453157d24 modifiedDate=2026-10-01T05:30:01Z total=69
+LATE_REJECTED invoice=p2_2a51252c3d modifiedDate=2026-10-01T05:34:41Z total=70
+WINDOW start=2026-10-01T05:35:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:35:00+00:00 method=card events=5 failures=1 failure_share=20.00%
+ALERT method=card window=2026-10-01T05:35:00+00:00 failure_share=20.00% threshold=10%
+WINDOW start=2026-10-01T05:35:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:36:00+00:00 method=apple_pay events=1 failures=1 failure_share=100.00%
+ALERT method=apple_pay window=2026-10-01T05:36:00+00:00 failure_share=100.00% threshold=10%
+WINDOW start=2026-10-01T05:36:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:36:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:37:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:37:00+00:00 method=card events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:38:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:38:00+00:00 method=card events=6 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:38:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:39:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:39:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:39:00+00:00 method=google_pay events=2 failures=1 failure_share=50.00%
+ALERT method=google_pay window=2026-10-01T05:39:00+00:00 failure_share=50.00% threshold=10%
+LATE_REJECTED invoice=p2_e4d8fbffff modifiedDate=2026-10-01T05:33:05Z total=71
+WINDOW start=2026-10-01T05:40:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:40:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:40:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:41:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:41:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:41:00+00:00 method=google_pay events=5 failures=1 failure_share=20.00%
+ALERT method=google_pay window=2026-10-01T05:41:00+00:00 failure_share=20.00% threshold=10%
+WINDOW start=2026-10-01T05:41:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_2f08293d2c modifiedDate=2026-10-01T05:41:42Z total=72
+LATE_REJECTED invoice=p2_378abab3b4 modifiedDate=2026-10-01T05:40:12Z total=73
+WINDOW start=2026-10-01T05:42:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:42:00+00:00 method=card events=4 failures=1 failure_share=25.00%
+ALERT method=card window=2026-10-01T05:42:00+00:00 failure_share=25.00% threshold=10%
+WINDOW start=2026-10-01T05:42:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:43:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:43:00+00:00 method=card events=6 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:43:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:44:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:44:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:44:00+00:00 method=google_pay events=1 failures=1 failure_share=100.00%
+ALERT method=google_pay window=2026-10-01T05:44:00+00:00 failure_share=100.00% threshold=10%
+WINDOW start=2026-10-01T05:45:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:45:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:45:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_a36ae7ae10 modifiedDate=2026-10-01T05:43:32Z total=74
+LATE_REJECTED invoice=p2_4fd8d2a9ae modifiedDate=2026-10-01T05:45:02Z total=75
+WINDOW start=2026-10-01T05:46:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:46:00+00:00 method=card events=6 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:47:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:47:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:47:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:48:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:48:00+00:00 method=card events=2 failures=1 failure_share=50.00%
+ALERT method=card window=2026-10-01T05:48:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T05:48:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:49:00+00:00 method=card events=4 failures=1 failure_share=25.00%
+ALERT method=card window=2026-10-01T05:49:00+00:00 failure_share=25.00% threshold=10%
+LATE_REJECTED invoice=p2_3108cfe45b modifiedDate=2026-10-01T05:44:22Z total=76
+WINDOW start=2026-10-01T05:50:00+00:00 method=card events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:51:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:51:00+00:00 method=card events=8 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:51:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:52:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:52:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:52:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:52:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_e68417edc2 modifiedDate=2026-10-01T05:46:39Z total=77
+WINDOW start=2026-10-01T05:53:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:53:00+00:00 method=card events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:53:00+00:00 method=google_pay events=2 failures=1 failure_share=50.00%
+ALERT method=google_pay window=2026-10-01T05:53:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T05:54:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:54:00+00:00 method=card events=7 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:54:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:55:00+00:00 method=apple_pay events=4 failures=1 failure_share=25.00%
+ALERT method=apple_pay window=2026-10-01T05:55:00+00:00 failure_share=25.00% threshold=10%
+WINDOW start=2026-10-01T05:55:00+00:00 method=card events=6 failures=2 failure_share=33.33%
+ALERT method=card window=2026-10-01T05:55:00+00:00 failure_share=33.33% threshold=10%
+WINDOW start=2026-10-01T05:55:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:56:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:56:00+00:00 method=card events=6 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:56:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:57:00+00:00 method=card events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:58:00+00:00 method=apple_pay events=4 failures=1 failure_share=25.00%
+ALERT method=apple_pay window=2026-10-01T05:58:00+00:00 failure_share=25.00% threshold=10%
+WINDOW start=2026-10-01T05:58:00+00:00 method=card events=6 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:58:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:59:00+00:00 method=apple_pay events=4 failures=1 failure_share=25.00%
+ALERT method=apple_pay window=2026-10-01T05:59:00+00:00 failure_share=25.00% threshold=10%
+WINDOW start=2026-10-01T05:59:00+00:00 method=card events=7 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T05:59:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:00:00+00:00 method=apple_pay events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:00:00+00:00 method=card events=8 failures=1 failure_share=12.50%
+ALERT method=card window=2026-10-01T06:00:00+00:00 failure_share=12.50% threshold=10%
+WINDOW start=2026-10-01T06:00:00+00:00 method=google_pay events=2 failures=1 failure_share=50.00%
+ALERT method=google_pay window=2026-10-01T06:00:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T06:01:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:01:00+00:00 method=card events=15 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:01:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:02:00+00:00 method=apple_pay events=2 failures=1 failure_share=50.00%
+ALERT method=apple_pay window=2026-10-01T06:02:00+00:00 failure_share=50.00% threshold=10%
+WINDOW start=2026-10-01T06:02:00+00:00 method=card events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:02:00+00:00 method=google_pay events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:03:00+00:00 method=apple_pay events=3 failures=1 failure_share=33.33%
+ALERT method=apple_pay window=2026-10-01T06:03:00+00:00 failure_share=33.33% threshold=10%
+WINDOW start=2026-10-01T06:03:00+00:00 method=card events=11 failures=1 failure_share=9.09%
+WINDOW start=2026-10-01T06:03:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:04:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:04:00+00:00 method=card events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:04:00+00:00 method=google_pay events=5 failures=1 failure_share=20.00%
+ALERT method=google_pay window=2026-10-01T06:04:00+00:00 failure_share=20.00% threshold=10%
+WINDOW start=2026-10-01T06:05:00+00:00 method=apple_pay events=1 failures=1 failure_share=100.00%
+ALERT method=apple_pay window=2026-10-01T06:05:00+00:00 failure_share=100.00% threshold=10%
+WINDOW start=2026-10-01T06:05:00+00:00 method=card events=7 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:05:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:06:00+00:00 method=apple_pay events=6 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:06:00+00:00 method=card events=8 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:06:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:07:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:07:00+00:00 method=card events=9 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:07:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:07:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_deba2df960 modifiedDate=2026-10-01T06:06:59Z total=78
+LATE_REJECTED invoice=p2_bea7c765d5 modifiedDate=2026-10-01T06:03:04Z total=79
+WINDOW start=2026-10-01T06:08:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:08:00+00:00 method=card events=10 failures=1 failure_share=10.00%
+WINDOW start=2026-10-01T06:08:00+00:00 method=google_pay events=2 failures=1 failure_share=50.00%
+ALERT method=google_pay window=2026-10-01T06:08:00+00:00 failure_share=50.00% threshold=10%
+LATE_REJECTED invoice=p2_3e8724050c modifiedDate=2026-10-01T06:06:09Z total=80
+WINDOW start=2026-10-01T06:09:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:09:00+00:00 method=card events=14 failures=1 failure_share=7.14%
+WINDOW start=2026-10-01T06:09:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:09:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_92725244ae modifiedDate=2026-10-01T06:03:04Z total=81
+WINDOW start=2026-10-01T06:10:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:10:00+00:00 method=card events=12 failures=1 failure_share=8.33%
+WINDOW start=2026-10-01T06:10:00+00:00 method=google_pay events=4 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_99fe82a1d6 modifiedDate=2026-10-01T06:04:23Z total=82
+WINDOW start=2026-10-01T06:11:00+00:00 method=apple_pay events=7 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:11:00+00:00 method=card events=8 failures=1 failure_share=12.50%
+ALERT method=card window=2026-10-01T06:11:00+00:00 failure_share=12.50% threshold=10%
+WINDOW start=2026-10-01T06:11:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_501abd6c8f modifiedDate=2026-10-01T06:10:23Z total=83
+LATE_REJECTED invoice=p2_2e31f98b2a modifiedDate=2026-10-01T06:05:57Z total=84
+WINDOW start=2026-10-01T06:12:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:12:00+00:00 method=card events=10 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:12:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:13:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:13:00+00:00 method=card events=8 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:13:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:14:00+00:00 method=apple_pay events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:14:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:14:00+00:00 method=google_pay events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:15:00+00:00 method=apple_pay events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:15:00+00:00 method=card events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:15:00+00:00 method=google_pay events=4 failures=3 failure_share=75.00%
+ALERT method=google_pay window=2026-10-01T06:15:00+00:00 failure_share=75.00% threshold=10%
+LATE_REJECTED invoice=p2_dcd67a554e modifiedDate=2026-10-01T06:09:32Z total=85
+LATE_REJECTED invoice=p2_c27676729d modifiedDate=2026-10-01T06:11:17Z total=86
+WINDOW start=2026-10-01T06:16:00+00:00 method=apple_pay events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:16:00+00:00 method=card events=9 failures=1 failure_share=11.11%
+ALERT method=card window=2026-10-01T06:16:00+00:00 failure_share=11.11% threshold=10%
+WINDOW start=2026-10-01T06:16:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:16:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:17:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:17:00+00:00 method=card events=14 failures=2 failure_share=14.29%
+ALERT method=card window=2026-10-01T06:17:00+00:00 failure_share=14.29% threshold=10%
+WINDOW start=2026-10-01T06:17:00+00:00 method=google_pay events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:18:00+00:00 method=apple_pay events=3 failures=1 failure_share=33.33%
+ALERT method=apple_pay window=2026-10-01T06:18:00+00:00 failure_share=33.33% threshold=10%
+WINDOW start=2026-10-01T06:18:00+00:00 method=card events=9 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:18:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:18:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:19:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:19:00+00:00 method=card events=6 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:19:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:19:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_6823d35b79 modifiedDate=2026-10-01T06:17:52Z total=87
+WINDOW start=2026-10-01T06:20:00+00:00 method=apple_pay events=4 failures=1 failure_share=25.00%
+ALERT method=apple_pay window=2026-10-01T06:20:00+00:00 failure_share=25.00% threshold=10%
+WINDOW start=2026-10-01T06:20:00+00:00 method=card events=10 failures=1 failure_share=10.00%
+WINDOW start=2026-10-01T06:20:00+00:00 method=google_pay events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:20:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:21:00+00:00 method=apple_pay events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:21:00+00:00 method=card events=10 failures=1 failure_share=10.00%
+WINDOW start=2026-10-01T06:21:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_535f1caf05 modifiedDate=2026-10-01T06:17:17Z total=88
+WINDOW start=2026-10-01T06:22:00+00:00 method=apple_pay events=3 failures=1 failure_share=33.33%
+ALERT method=apple_pay window=2026-10-01T06:22:00+00:00 failure_share=33.33% threshold=10%
+WINDOW start=2026-10-01T06:22:00+00:00 method=card events=9 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:22:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:23:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:23:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:23:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_55684bfe42 modifiedDate=2026-10-01T06:22:28Z total=89
+WINDOW start=2026-10-01T06:24:00+00:00 method=apple_pay events=6 failures=1 failure_share=16.67%
+ALERT method=apple_pay window=2026-10-01T06:24:00+00:00 failure_share=16.67% threshold=10%
+WINDOW start=2026-10-01T06:24:00+00:00 method=card events=8 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:24:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_501640aad8 modifiedDate=2026-10-01T06:22:42Z total=90
+LATE_REJECTED invoice=p2_f5c819edcf modifiedDate=2026-10-01T06:21:27Z total=91
+LATE_REJECTED invoice=p2_8863ec38ed modifiedDate=2026-10-01T06:20:28Z total=92
+LATE_REJECTED invoice=p2_89baafbf7c modifiedDate=2026-10-01T06:22:12Z total=93
+WINDOW start=2026-10-01T06:25:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:25:00+00:00 method=card events=9 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:25:00+00:00 method=google_pay events=5 failures=1 failure_share=20.00%
+ALERT method=google_pay window=2026-10-01T06:25:00+00:00 failure_share=20.00% threshold=10%
+WINDOW start=2026-10-01T06:26:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:26:00+00:00 method=card events=10 failures=2 failure_share=20.00%
+ALERT method=card window=2026-10-01T06:26:00+00:00 failure_share=20.00% threshold=10%
+WINDOW start=2026-10-01T06:26:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:27:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:27:00+00:00 method=card events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:27:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:28:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:28:00+00:00 method=card events=7 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:28:00+00:00 method=google_pay events=3 failures=1 failure_share=33.33%
+ALERT method=google_pay window=2026-10-01T06:28:00+00:00 failure_share=33.33% threshold=10%
+LATE_REJECTED invoice=p2_3b957f2813 modifiedDate=2026-10-01T06:23:25Z total=94
+WINDOW start=2026-10-01T06:29:00+00:00 method=apple_pay events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:29:00+00:00 method=card events=10 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:29:00+00:00 method=google_pay events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:29:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_ad16a74832 modifiedDate=2026-10-01T06:26:31Z total=95
+LATE_REJECTED invoice=p2_905340d704 modifiedDate=2026-10-01T06:24:34Z total=96
+WINDOW start=2026-10-01T06:30:00+00:00 method=apple_pay events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:30:00+00:00 method=card events=9 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:30:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:31:00+00:00 method=apple_pay events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:31:00+00:00 method=card events=14 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:31:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_38fdc41e9e modifiedDate=2026-10-01T06:25:56Z total=97
+LATE_REJECTED invoice=p2_97a60ee64b modifiedDate=2026-10-01T06:31:42Z total=98
+LATE_REJECTED invoice=p2_8e4db8914d modifiedDate=2026-10-01T06:25:29Z total=99
+WINDOW start=2026-10-01T06:32:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:32:00+00:00 method=card events=10 failures=1 failure_share=10.00%
+WINDOW start=2026-10-01T06:32:00+00:00 method=google_pay events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:32:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:33:00+00:00 method=apple_pay events=7 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:33:00+00:00 method=card events=9 failures=1 failure_share=11.11%
+ALERT method=card window=2026-10-01T06:33:00+00:00 failure_share=11.11% threshold=10%
+WINDOW start=2026-10-01T06:33:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_4cc4dc989f modifiedDate=2026-10-01T06:26:07Z total=100
+WINDOW start=2026-10-01T06:34:00+00:00 method=apple_pay events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:34:00+00:00 method=card events=9 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:34:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_8b6c70167e modifiedDate=2026-10-01T06:28:53Z total=101
+LATE_REJECTED invoice=p2_c33ce77bce modifiedDate=2026-10-01T06:34:09Z total=102
+WINDOW start=2026-10-01T06:35:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:35:00+00:00 method=card events=11 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:35:00+00:00 method=google_pay events=3 failures=1 failure_share=33.33%
+ALERT method=google_pay window=2026-10-01T06:35:00+00:00 failure_share=33.33% threshold=10%
+LATE_REJECTED invoice=p2_5939c2501c modifiedDate=2026-10-01T06:29:22Z total=103
+WINDOW start=2026-10-01T06:36:00+00:00 method=apple_pay events=10 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:36:00+00:00 method=card events=12 failures=1 failure_share=8.33%
+WINDOW start=2026-10-01T06:36:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:37:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:37:00+00:00 method=card events=6 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:37:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_a73ae8ce40 modifiedDate=2026-10-01T06:30:27Z total=104
+LATE_REJECTED invoice=p2_f4fe3566b7 modifiedDate=2026-10-01T06:31:28Z total=105
+WINDOW start=2026-10-01T06:38:00+00:00 method=apple_pay events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:38:00+00:00 method=card events=14 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:39:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:39:00+00:00 method=card events=6 failures=1 failure_share=16.67%
+ALERT method=card window=2026-10-01T06:39:00+00:00 failure_share=16.67% threshold=10%
+WINDOW start=2026-10-01T06:39:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:40:00+00:00 method=apple_pay events=7 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:40:00+00:00 method=card events=13 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:40:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_359183ba92 modifiedDate=2026-10-01T06:36:22Z total=106
+WINDOW start=2026-10-01T06:41:00+00:00 method=apple_pay events=3 failures=1 failure_share=33.33%
+ALERT method=apple_pay window=2026-10-01T06:41:00+00:00 failure_share=33.33% threshold=10%
+WINDOW start=2026-10-01T06:41:00+00:00 method=card events=5 failures=1 failure_share=20.00%
+ALERT method=card window=2026-10-01T06:41:00+00:00 failure_share=20.00% threshold=10%
+WINDOW start=2026-10-01T06:41:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_78a6b753c8 modifiedDate=2026-10-01T06:35:52Z total=107
+LATE_REJECTED invoice=p2_4c38caf3ac modifiedDate=2026-10-01T06:40:15Z total=108
+WINDOW start=2026-10-01T06:42:00+00:00 method=apple_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:42:00+00:00 method=card events=5 failures=1 failure_share=20.00%
+ALERT method=card window=2026-10-01T06:42:00+00:00 failure_share=20.00% threshold=10%
+WINDOW start=2026-10-01T06:42:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:42:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_a37482b42b modifiedDate=2026-10-01T06:38:21Z total=109
+WINDOW start=2026-10-01T06:43:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:43:00+00:00 method=card events=7 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:44:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:44:00+00:00 method=card events=7 failures=1 failure_share=14.29%
+ALERT method=card window=2026-10-01T06:44:00+00:00 failure_share=14.29% threshold=10%
+WINDOW start=2026-10-01T06:44:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:45:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:45:00+00:00 method=card events=8 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:45:00+00:00 method=google_pay events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:46:00+00:00 method=apple_pay events=4 failures=1 failure_share=25.00%
+ALERT method=apple_pay window=2026-10-01T06:46:00+00:00 failure_share=25.00% threshold=10%
+WINDOW start=2026-10-01T06:46:00+00:00 method=card events=6 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:46:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_89f6fa832d modifiedDate=2026-10-01T06:45:53Z total=110
+WINDOW start=2026-10-01T06:47:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:47:00+00:00 method=card events=13 failures=1 failure_share=7.69%
+WINDOW start=2026-10-01T06:47:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:48:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:48:00+00:00 method=card events=11 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:48:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:48:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:49:00+00:00 method=apple_pay events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:49:00+00:00 method=card events=6 failures=1 failure_share=16.67%
+ALERT method=card window=2026-10-01T06:49:00+00:00 failure_share=16.67% threshold=10%
+WINDOW start=2026-10-01T06:49:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:49:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:50:00+00:00 method=apple_pay events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:50:00+00:00 method=card events=7 failures=1 failure_share=14.29%
+ALERT method=card window=2026-10-01T06:50:00+00:00 failure_share=14.29% threshold=10%
+WINDOW start=2026-10-01T06:50:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:50:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:51:00+00:00 method=apple_pay events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:51:00+00:00 method=card events=6 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:51:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:51:00+00:00 method=qr events=1 failures=1 failure_share=100.00%
+ALERT method=qr window=2026-10-01T06:51:00+00:00 failure_share=100.00% threshold=10%
+LATE_REJECTED invoice=p2_d0a4fc05c4 modifiedDate=2026-10-01T06:46:03Z total=111
+WINDOW start=2026-10-01T06:52:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:52:00+00:00 method=card events=6 failures=1 failure_share=16.67%
+ALERT method=card window=2026-10-01T06:52:00+00:00 failure_share=16.67% threshold=10%
+WINDOW start=2026-10-01T06:52:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:52:00+00:00 method=qr events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:53:00+00:00 method=apple_pay events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:53:00+00:00 method=card events=10 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:53:00+00:00 method=google_pay events=3 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:53:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:54:00+00:00 method=apple_pay events=8 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:54:00+00:00 method=card events=7 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:54:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:54:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:55:00+00:00 method=apple_pay events=6 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:55:00+00:00 method=card events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:55:00+00:00 method=google_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:56:00+00:00 method=apple_pay events=5 failures=1 failure_share=20.00%
+ALERT method=apple_pay window=2026-10-01T06:56:00+00:00 failure_share=20.00% threshold=10%
+WINDOW start=2026-10-01T06:56:00+00:00 method=card events=9 failures=1 failure_share=11.11%
+ALERT method=card window=2026-10-01T06:56:00+00:00 failure_share=11.11% threshold=10%
+WINDOW start=2026-10-01T06:56:00+00:00 method=google_pay events=5 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:56:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_e5359386b2 modifiedDate=2026-10-01T06:53:58Z total=112
+WINDOW start=2026-10-01T06:57:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:57:00+00:00 method=card events=12 failures=1 failure_share=8.33%
+WINDOW start=2026-10-01T06:57:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+LATE_REJECTED invoice=p2_c4d797e415 modifiedDate=2026-10-01T06:54:58Z total=113
+LATE_REJECTED invoice=p2_3cafa46ac6 modifiedDate=2026-10-01T06:55:42Z total=114
+LATE_REJECTED invoice=p2_d9e45f9a89 modifiedDate=2026-10-01T06:50:53Z total=115
+LATE_REJECTED invoice=p2_a7b569c10b modifiedDate=2026-10-01T06:54:37Z total=116
+WINDOW start=2026-10-01T06:58:00+00:00 method=apple_pay events=2 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:58:00+00:00 method=card events=4 failures=1 failure_share=25.00%
+ALERT method=card window=2026-10-01T06:58:00+00:00 failure_share=25.00% threshold=10%
+WINDOW start=2026-10-01T06:58:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:59:00+00:00 method=apple_pay events=4 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:59:00+00:00 method=card events=9 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:59:00+00:00 method=google_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T06:59:00+00:00 method=qr events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T07:00:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T07:00:00+00:00 method=card events=11 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T07:00:00+00:00 method=google_pay events=6 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T07:01:00+00:00 method=apple_pay events=1 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T07:01:00+00:00 method=card events=8 failures=0 failure_share=0.00%
+WINDOW start=2026-10-01T07:01:00+00:00 method=google_pay events=2 failures=1 failure_share=50.00%
+ALERT method=google_pay window=2026-10-01T07:01:00+00:00 failure_share=50.00% threshold=10%
+Stopped. exact_duplicates=87 late_rejected=116

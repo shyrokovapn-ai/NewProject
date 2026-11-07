@@ -1,0 +1,133 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: 'Payments lab stream: Kinesis, Firehose to S3, Athena-ready JSONL and SNS failure alerts.'
+
+Parameters:
+  BucketName:
+    Type: String
+    Description: Existing S3 bucket in this stack's region for Firehose output.
+  StreamName:
+    Type: String
+    Default: payments-lab-stream
+  FirehoseName:
+    Type: String
+    Default: payments-lab-firehose
+  AlertEmail:
+    Type: String
+    Default: ''
+    Description: Optional email endpoint to subscribe to the SNS alert topic.
+
+Conditions:
+  HasAlertEmail: !Not [!Equals [!Ref AlertEmail, '']]
+
+Resources:
+  AlertTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: !Sub '${AWS::StackName}-payment-alerts'
+
+  AlertEmailSubscription:
+    Type: AWS::SNS::Subscription
+    Condition: HasAlertEmail
+    Properties:
+      TopicArn: !Ref AlertTopic
+      Protocol: email
+      Endpoint: !Ref AlertEmail
+
+  PaymentStream:
+    Type: AWS::Kinesis::Stream
+    Properties:
+      Name: !Ref StreamName
+      ShardCount: 1
+      RetentionPeriodHours: 24
+
+  FirehoseRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal: { Service: firehose.amazonaws.com }
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: ReadKinesisWriteStreamPrefix
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action: [kinesis:DescribeStream, kinesis:GetShardIterator, kinesis:GetRecords, kinesis:ListShards]
+                Resource: !GetAtt PaymentStream.Arn
+              - Effect: Allow
+                Action: [s3:AbortMultipartUpload, s3:GetBucketLocation, s3:ListBucket, s3:ListBucketMultipartUploads]
+                Resource: !Sub 'arn:${AWS::Partition}:s3:::${BucketName}'
+              - Effect: Allow
+                Action: [s3:PutObject]
+                Resource: !Sub 'arn:${AWS::Partition}:s3:::${BucketName}/stream/*'
+
+  StreamDelivery:
+    Type: AWS::KinesisFirehose::DeliveryStream
+    DependsOn: FirehoseRole
+    Properties:
+      DeliveryStreamName: !Ref FirehoseName
+      DeliveryStreamType: KinesisStreamAsSource
+      KinesisStreamSourceConfiguration:
+        KinesisStreamARN: !GetAtt PaymentStream.Arn
+        RoleARN: !GetAtt FirehoseRole.Arn
+      ExtendedS3DestinationConfiguration:
+        BucketARN: !Sub 'arn:${AWS::Partition}:s3:::${BucketName}'
+        RoleARN: !GetAtt FirehoseRole.Arn
+        Prefix: stream/raw/
+        ErrorOutputPrefix: stream/errors/!{firehose:error-output-type}/
+        BufferingHints:
+          SizeInMBs: 1
+          IntervalInSeconds: 60
+        CompressionFormat: UNCOMPRESSED
+        ProcessingConfiguration:
+          Enabled: true
+          Processors:
+            - Type: AppendDelimiterToRecord
+              Parameters:
+                - ParameterName: Delimiter
+                  ParameterValue: '\n'
+
+  AlertFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: !Sub '${AWS::StackName}-failure-alert'
+      CodeUri: .
+      Handler: alert_handler.handler
+      Runtime: python3.12
+      Timeout: 30
+      MemorySize: 128
+      Environment:
+        Variables:
+          ALERT_TOPIC_ARN: !Ref AlertTopic
+      Policies:
+        - Statement:
+            - Effect: Allow
+              Action: sns:Publish
+              Resource: !Ref AlertTopic
+      Events:
+        StreamRecords:
+          Type: Kinesis
+          Properties:
+            Stream: !GetAtt PaymentStream.Arn
+            StartingPosition: TRIM_HORIZON
+            BatchSize: 100
+            MaximumBatchingWindowInSeconds: 1
+            BisectBatchOnFunctionError: true
+            RetryAttempts: 2
+
+Outputs:
+  StreamName:
+    Value: !Ref PaymentStream
+  StreamArn:
+    Value: !GetAtt PaymentStream.Arn
+  FirehoseName:
+    Value: !Ref StreamDelivery
+  AlertTopicArn:
+    Value: !Ref AlertTopic
+  AthenaCreateStreamTable:
+    Value: !Sub "CREATE EXTERNAL TABLE payments_lab.stream_events (invoiceId string,status string,failureReason string,amount string,finalAmount string,ccy string,reference string,createdDate string,modifiedDate string,receivedAt string,merchantId string,merchantName string,mcc string,customerId string,paymentMethod string,device string) ROW FORMAT SERDE 'org.openx.data.jsonserde.JsonSerDe' STORED AS TEXTFILE LOCATION 's3://${BucketName}/stream/raw/';"
+

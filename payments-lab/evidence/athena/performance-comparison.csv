@@ -1,0 +1,4 @@
+query,raw_bytes,raw_runtime_ms,parquet_bytes,parquet_runtime_ms,scan_reduction
+turnover,1260692423,3645,4992131,988,252.5x
+failure_rate,1260692423,3570,569529,1315,2213.6x
+peak_hour,1260692423,4551,3775644,1369,333.9x

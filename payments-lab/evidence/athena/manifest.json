@@ -1,0 +1,132 @@
+[
+  {
+    "name": "01_create_database_if_not_exists_payments_lab",
+    "query_id": "af7e5b72-021a-4695-8773-5d0040335c72",
+    "state": "SUCCEEDED",
+    "data_scanned_bytes": 0,
+    "engine_execution_ms": 368,
+    "output_location": "s3://ooad-payments-lab-607987766447-20261107/athena-results/af7e5b72-021a-4695-8773-5d0040335c72.txt"
+  },
+  {
+    "name": "02_create_external_table_if_not_exists_payments_lab",
+    "query_id": "39c83eb1-0598-421c-a6d9-6c5775e18fcf",
+    "state": "SUCCEEDED",
+    "data_scanned_bytes": 0,
+    "engine_execution_ms": 346,
+    "output_location": "s3://ooad-payments-lab-607987766447-20261107/athena-results/39c83eb1-0598-421c-a6d9-6c5775e18fcf.txt"
+  },
+  {
+    "name": "03_msck_repair_table_payments_lab_payment_events",
+    "query_id": "ed7af76d-3265-45f2-ade3-ef5171a63622",
+    "state": "SUCCEEDED",
+    "data_scanned_bytes": 0,
+    "engine_execution_ms": 4244,
+    "output_location": "s3://ooad-payments-lab-607987766447-20261107/athena-results/ed7af76d-3265-45f2-ade3-ef5171a63622.txt"
+  },
+  {
+    "name": "04_select_count_as_total_events_count_distinct_invo",
+    "query_id": "5f66988f-598a-45b2-a990-2a7dcfa7c1de",
+    "state": "SUCCEEDED",
+    "data_scanned_bytes": 1260692423,
+    "engine_execution_ms": 1662,
+    "output_location": "s3://ooad-payments-lab-607987766447-20261107/athena-results/5f66988f-598a-45b2-a990-2a7dcfa7c1de.csv",
+    "csv_rows": 1
+  },
+  {
+    "name": "05_with_distinct_events_as_select_distinct_invoicei",
+    "query_id": "53783c06-f6e9-44c6-beee-982d3d6dbf79",
+    "state": "SUCCEEDED",
+    "data_scanned_bytes": 2521384846,
+    "engine_execution_ms": 2598,
+    "output_location": "s3://ooad-payments-lab-607987766447-20261107/athena-results/53783c06-f6e9-44c6-beee-982d3d6dbf79.csv",
+    "csv_rows": 1
+  },
+  {
+    "name": "06_with_lagged_as_select_date_diff_second_from_iso8",
+    "query_id": "322681b1-8d06-44d1-8c6c-7074d599ef90",
+    "state": "SUCCEEDED",
+    "data_scanned_bytes": 1260692423,
+    "engine_execution_ms": 1763,
+    "output_location": "s3://ooad-payments-lab-607987766447-20261107/athena-results/322681b1-8d06-44d1-8c6c-7074d599ef90.csv",
+    "csv_rows": 1
+  },
+  {
+    "name": "07_create_or_replace_view_payments_lab_payments_as_",
+    "query_id": "27351351-382b-4d80-9f2d-c1d8f3b147d5",
+    "state": "SUCCEEDED",
+    "data_scanned_bytes": 0,
+    "engine_execution_ms": 366,
+    "output_location": "s3://ooad-payments-lab-607987766447-20261107/athena-results/27351351-382b-4d80-9f2d-c1d8f3b147d5.txt"
+  },
+  {
+    "name": "08_select_merchantid_merchantname_ccy_sum_final_amo",
+    "query_id": "53e63240-9388-4803-84f9-5dd3c4596732",
+    "state": "SUCCEEDED",
+    "data_scanned_bytes": 1260692423,
+    "engine_execution_ms": 3645,
+    "output_location": "s3://ooad-payments-lab-607987766447-20261107/athena-results/53e63240-9388-4803-84f9-5dd3c4596732.csv",
+    "csv_rows": 30
+  },
+  {
+    "name": "09_select_paymentmethod_device_count_as_payments_co",
+    "query_id": "319b1dbc-8203-4e33-acd3-2015aeadcf77",
+    "state": "SUCCEEDED",
+    "data_scanned_bytes": 1260692423,
+    "engine_execution_ms": 3570,
+    "output_location": "s3://ooad-payments-lab-607987766447-20261107/athena-results/319b1dbc-8203-4e33-acd3-2015aeadcf77.csv",
+    "csv_rows": 12
+  },
+  {
+    "name": "10_select_hour_from_iso8601_timestamp_createddate_a",
+    "query_id": "0467a28c-c0e1-4f4f-adff-8853df18b589",
+    "state": "SUCCEEDED",
+    "data_scanned_bytes": 1260692423,
+    "engine_execution_ms": 4551,
+    "output_location": "s3://ooad-payments-lab-607987766447-20261107/athena-results/0467a28c-c0e1-4f4f-adff-8853df18b589.csv",
+    "csv_rows": 24
+  },
+  {
+    "name": "11_select_count_as_total_events_count_if_date_diff_",
+    "query_id": "ebdc1db4-a0e4-4dea-be97-fdc5e3c914cc",
+    "state": "SUCCEEDED",
+    "data_scanned_bytes": 1260692423,
+    "engine_execution_ms": 2284,
+    "output_location": "s3://ooad-payments-lab-607987766447-20261107/athena-results/ebdc1db4-a0e4-4dea-be97-fdc5e3c914cc.csv",
+    "csv_rows": 1
+  },
+  {
+    "name": "12_create_table_payments_lab_payments_parquet_with_",
+    "query_id": "51788615-e86a-4fc2-bce4-bf0d54f610f0",
+    "state": "SUCCEEDED",
+    "data_scanned_bytes": 1260692423,
+    "engine_execution_ms": 8045,
+    "output_location": "s3://ooad-payments-lab-607987766447-20261107/athena-results/tables/51788615-e86a-4fc2-bce4-bf0d54f610f0"
+  },
+  {
+    "name": "parquet_turnover",
+    "query_id": "6cad92d3-d4e8-4803-b7ac-427623d76fe9",
+    "state": "SUCCEEDED",
+    "data_scanned_bytes": 4992131,
+    "engine_execution_ms": 988,
+    "output_location": "s3://ooad-payments-lab-607987766447-20261107/athena-results/6cad92d3-d4e8-4803-b7ac-427623d76fe9.csv",
+    "csv_rows": 30
+  },
+  {
+    "name": "parquet_failure_rate",
+    "query_id": "f90eca45-6883-405f-98b1-8ed20a8d6a84",
+    "state": "SUCCEEDED",
+    "data_scanned_bytes": 569529,
+    "engine_execution_ms": 1315,
+    "output_location": "s3://ooad-payments-lab-607987766447-20261107/athena-results/f90eca45-6883-405f-98b1-8ed20a8d6a84.csv",
+    "csv_rows": 12
+  },
+  {
+    "name": "parquet_peak_hour",
+    "query_id": "66afcf01-71ca-4d09-8d9a-9184c1c5d77f",
+    "state": "SUCCEEDED",
+    "data_scanned_bytes": 3775644,
+    "engine_execution_ms": 1369,
+    "output_location": "s3://ooad-payments-lab-607987766447-20261107/athena-results/66afcf01-71ca-4d09-8d9a-9184c1c5d77f.csv",
+    "csv_rows": 24
+  }
+]
